@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get repos code
-                - uses: actions/checkout@v6
+            uses: actions/checkout@v6
             - name: Install depend
                 run: npm ci
             - name: Test app
