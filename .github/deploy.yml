@@ -32,7 +32,7 @@ jobs:
             path: ~/.npm
             key: node-modules-${{ hashFiles('**/package-lock.json') }}
         - name: Install depend
-          run: npm installl
+          run: npm install
         - name: lint app
           run: npm run lint
   build:
