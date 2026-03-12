@@ -15,7 +15,7 @@ jobs:
           uses: actions/cache@v5
           with:
             path: ~/.npm
-            key: node-modules-${{ hashFiles('**/package-lock,json') }}
+            key: node-modules-${{ hashFiles('**/package-lock.json') }}
         - name: Install depend
           run: npm install
         - name: Test app
@@ -30,7 +30,7 @@ jobs:
           uses: actions/cache@v5
           with:
             path: ~/.npm
-            key: node-modules-${{ hashFiles('**/package-lock,json') }}
+            key: node-modules-${{ hashFiles('**/package-lock.json') }}
         - name: Install depend
           run: npm installl
         - name: lint app
@@ -45,7 +45,7 @@ jobs:
           uses: actions/cache@v5
           with:
             path: ~/.npm
-            key: node-modules-${{ hashFiles('**/package-lock,json') }}
+            key: node-modules-${{ hashFiles('**/package-lock.json') }}
         - name: Install depend
           run: npm install
         - name: build app
